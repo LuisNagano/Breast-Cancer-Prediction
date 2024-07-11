@@ -84,6 +84,22 @@ Early detection of breast cancer can significantly improve the prognosis and tre
     y = df['diagnosis']
     X_scaled = scaler.fit_transform(X)
     ```
+## Top 3 Data Insights
+
+1. **Tumor Size and Malignancy**:
+   - **Insight**: Larger tumor sizes are strongly associated with malignant diagnoses.
+   - **Supporting Evidence**: The mean radius, perimeter, and area of the tumors were all higher for malignant cases compared to benign ones. This indicates that tumor size metrics are vital features in distinguishing between malignant and benign tumors.
+   - **Business Implication**: Emphasizing tumor size metrics in diagnostic processes can enhance the accuracy of early detection models, leading to more timely and effective treatments.
+
+2. **Concavity Mean and Malignancy**:
+   - **Insight**: Higher mean concavity values increase the probability of a malignant diagnosis.
+   - **Supporting Evidence**: The analysis showed that higher mean concavity values are strongly correlated with malignancy. This highlights the importance of this feature in the machine learning models used for prediction.
+   - **Business Implication**: Incorporating concavity mean metrics in diagnostic tools can provide better differentiation between malignant and benign tumors, improving the reliability of breast cancer predictions.
+
+3. **Radius Mean and Malignancy**:
+   - **Insight**: Higher radius mean values are associated with malignant breast cancer.
+   - **Supporting Evidence**: The analysis demonstrated that higher radius mean values indicate a higher chance of malignancy. This feature is a significant indicator in the prediction models.
+   - **Business Implication**: Utilizing radius mean values in diagnostic protocols can aid in the early detection of malignant tumors, thereby improving patient outcomes through timely intervention.
 
 ## Exploratory Data Analysis (EDA)
 
