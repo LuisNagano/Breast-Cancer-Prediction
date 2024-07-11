@@ -175,6 +175,8 @@ Various models were trained and evaluated on the dataset. Below are the implemen
 
 ## Model Evaluation
 
+![Model Evaluation Metrics](sandbox:/mnt/data/model_evaluation_metrics.png)
+
 Each model was evaluated using accuracy, precision, recall, F1-score, and ROC-AUC. Below are the results for each model:
 
 - **Logistic Regression**:
