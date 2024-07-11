@@ -124,8 +124,6 @@ Early detection of breast cancer can significantly improve the prognosis and tre
 
 Various models were trained and evaluated on the dataset. Below are the implementation details for each model:
 
-![Model Evaluation Metrics](https://github.com/LuisNagano/Breast-Cancer-Prediction/blob/main/Figures/Model_Evaluation_Metrics.png)
-
 1. **Logistic Regression**:
     ```python
     from sklearn.linear_model import LogisticRegression
@@ -177,9 +175,9 @@ Various models were trained and evaluated on the dataset. Below are the implemen
 
 ## Model Evaluation
 
-![Model Evaluation Metrics](sandbox:/mnt/data/model_evaluation_metrics.png)
-
 Each model was evaluated using accuracy, precision, recall, F1-score, and ROC-AUC. Below are the results for each model:
+
+![Model Evaluation Metrics](https://github.com/LuisNagano/Breast-Cancer-Prediction/blob/main/Figures/Model_Evaluation_Metrics.png)
 
 - **Logistic Regression**:
   - Accuracy: 96.49%
