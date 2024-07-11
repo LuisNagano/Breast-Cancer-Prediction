@@ -202,25 +202,25 @@ Each model was evaluated using accuracy, precision, recall, F1-score, and ROC-AU
   - F1-Score: 93.87%
   - ROC-AUC: 0.95
 
+## Business Results
+
+- **What percentage of patients are predicted to have malignant tumors? How many of these patients can be accurately identified using the top-performing model?**
+
+    i. The dataset contains 569 instances, with 212 (37.28%) instances of malignant tumors and 357 (62.72%) instances of benign tumors  .
+
+    ii. The best-performing model, Support Vector Machine (SVM), has a precision of 98% for predicting malignant tumors  . Therefore, using the model, it is possible to correctly identify approximately 208 patients with malignant tumors (98% of 212). However, the recall is about 94.00%, meaning approximately 199 of the 212 malignant cases are correctly identified, with a margin of error (± 0.0016)  .
+
+- **If the diagnostic capacity is increased to include more patients, how many additional patients with malignant tumors can be accurately identified?**
+
+    Increasing the capacity to diagnose an additional 100 patients using the SVM model will likely result in correctly identifying approximately 37 more patients with malignant tumors (considering the prevalence of 37.28% malignant cases in the dataset and the recall rate of 94.00%)  .
+
+- **How many patients need to be diagnosed to ensure that at least 80% of all malignant tumor cases are accurately identified?**
+
+    The model sorts 94.00% of the malignant tumor cases correctly. To ensure at least 80% of all malignant cases (i.e., 170 out of 212 cases) are accurately identified, approximately 181 patients need to be diagnosed (considering the recall rate and precision)  .
+
 ## Conclusion
 
 The SVM and Random Forest models demonstrated the best performance with the highest accuracy and ROC-AUC scores. These models are well-suited for predicting breast cancer and can be integrated into clinical workflows to assist in early diagnosis. Future work could involve further tuning of hyperparameters, exploration of additional features, and validation on external datasets.
-
-## Model Deployment
-
-The best-performing models were saved using the `pickle` module for future deployment. The saved models can be loaded and used to make predictions on new data.
-
-```python
-import pickle
-
-# Save the model
-with open('svc_model.pkl', 'wb') as file:
-    pickle.dump(svc, file)
-
-# Load the model
-with open('svc_model.pkl', 'rb') as file:
-    loaded_model = pickle.load(file)
-```
 
 ## Acknowledgments
 
