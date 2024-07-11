@@ -1,6 +1,6 @@
 # Breast Cancer Diagnostic Model
 
-## Overview
+## Project Overview
 
 Breast cancer is one of the most common types of cancer among women worldwide. Early detection and diagnosis are crucial for improving the survival rates and treatment outcomes for breast cancer patients. This project aims to build and evaluate various machine learning models to predict breast cancer using clinical and pathological data.
 
@@ -221,10 +221,6 @@ with open('svc_model.pkl', 'wb') as file:
 with open('svc_model.pkl', 'rb') as file:
     loaded_model = pickle.load(file)
 ```
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgments
 
