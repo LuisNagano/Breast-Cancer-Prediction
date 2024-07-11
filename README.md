@@ -218,7 +218,7 @@ Each model was evaluated using accuracy, precision, recall, F1-score, and ROC-AU
 
     The model sorts 94.00% of the malignant tumor cases correctly. To ensure at least 80% of all malignant cases (i.e., 170 out of 212 cases) are accurately identified, approximately 181 patients need to be diagnosed (considering the recall rate and precision)  .
 
-### Conclusion
+## Conclusion
 
 The random model classified correctly just a small fraction of the malignant cases. The final model, specifically the Support Vector Machine (SVM), demonstrated a significantly higher ability to differentiate the classes and managed to correctly classify 98% of the malignant cases. The lift curve also shows that the model manages to have a gain substantially greater than the random choice of predictions.
 
@@ -228,7 +228,7 @@ The profit using the model is calculated as follows: with an accuracy of 98% and
 
 This project demonstrates that the SVM model is highly effective in predicting breast cancer, with a balance of precision and recall that ensures most malignant cases are correctly identified while minimizing false positives. Future work could involve further refinement of the model, including hyperparameter tuning and validation on larger, more diverse datasets to improve its robustness and generalizability.
 
-### Next Steps
+## Next Steps
 
 - **Improvement of the model's metrics, especially the recall**:
   While the current model shows high precision, improving the recall is crucial to ensure that fewer malignant cases are missed. This can be achieved by further tuning the model’s hyperparameters, exploring different feature engineering techniques, and potentially incorporating additional data sources.
